@@ -1,0 +1,108 @@
+.footer {
+  background-color: var(--color-primary-dark);
+  border-top: 3px solid var(--color-primary-light);
+}
+
+.footer-inner {
+  max-width: 1126px;
+  margin: 0 auto;
+  padding: 48px 32px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+/* ── Info columns ─────────────────────────────────────── */
+.footer-info {
+  display: flex;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
+.footer-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-heading {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--color-primary-light);
+  margin: 0;
+}
+
+.footer-description {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Address ──────────────────────────────────────────── */
+.footer-address {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Schedule ─────────────────────────────────────────── */
+.footer-schedule {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-schedule li {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.schedule-days {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-white);
+}
+
+.schedule-hours {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.70);
+  line-height: 1.5;
+}
+
+/* ── Mobile ───────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 40px 20px;
+    gap: 32px;
+  }
+
+  .footer-info {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .scroll-top {
+    align-self: flex-start;
+    flex-direction: row;
+    gap: 10px;
+    padding: 12px 20px;
+  }
+
+  .scroll-top-arrow {
+    font-size: 17px;
+  }
+}
