@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
+import logo from '../assets/logo.png'
 
 const NAV_LINKS = [
   { label: 'Psicología',   href: '#psicologia' },
@@ -16,7 +17,9 @@ export default function Navbar() {
     <nav className="navbar" aria-label="Navegación principal">
       <div className="navbar-inner">
         <a className="navbar-brand" href="#" aria-label="Inicio – Grupo de Gestión Zapopan">
-          <div className="logo-mark" aria-hidden="true">GGZ</div>
+          <div className="logo-mark" aria-hidden="true">
+          <img src={logo} alt="Logo Grupo de Gestión Zapopan" width={40} height={40} />
+          </div>
           <span className="logo-text">Grupo de Gestión Zapopan</span>
         </a>
 

@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   return (
-    <>
+    <div className="app">
       <Navbar />
 
       <main>
@@ -31,7 +31,7 @@ function App() {
           </div>
         </section>
       </main>
-    </>
+    </div>
   )
 }
 
