@@ -1,61 +1,56 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
+  /* Brand palette */
+  --color-primary:       rgb(39, 131, 224);
+  --color-primary-dark:  rgb(22, 74, 185);
+  --color-primary-light: rgb(96, 185, 239);
+  --color-bg:            rgb(237, 248, 255);
+  --color-text:          rgb(34, 53, 77);
+  --color-text-muted:    rgb(90, 105, 125);
+  --color-success:       rgb(113, 210, 84);
+  --color-success-bg:    rgb(167, 230, 137);
+  --color-warning:       rgb(248, 201, 64);
+  --color-error:         rgb(243, 117, 116);
+  --color-promo:         rgb(241, 112, 183);
+  --color-accent2:       rgb(162, 110, 223);
+  --color-white:         rgb(255, 255, 255);
+  --color-border:        rgb(205, 214, 225);
+  --color-disabled-text: rgb(90, 105, 125);
+  --color-disabled-bg:   rgb(245, 247, 250);
+
+  /* Legacy aliases kept for existing component usage */
+  --text:       var(--color-text-muted);
+  --text-h:     var(--color-text);
+  --bg:         var(--color-bg);
+  --border:     var(--color-border);
+  --code-bg:    rgb(230, 242, 252);
+  --accent:     var(--color-primary);
+  --accent-bg:  rgba(39, 131, 224, 0.1);
+  --accent-border: rgba(39, 131, 224, 0.5);
+  --social-bg:  rgba(237, 248, 255, 0.6);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans:    system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --mono: ui-monospace, Consolas, monospace;
+  --mono:    ui-monospace, Consolas, monospace;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
-  color: var(--text);
-  background: var(--bg);
+  color: var(--color-text);
+  background: var(--color-bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 
   @media (max-width: 1024px) {
     font-size: 16px;
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
-  }
-
-  #social .button-icon {
-    filter: invert(1) brightness(2);
-  }
-}
-
 #root {
-  width: 1126px;
-  max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
-  border-inline: 1px solid var(--border);
+  width: 100%;
   min-height: 100svh;
   display: flex;
   flex-direction: column;
