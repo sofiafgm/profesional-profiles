@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './Navbar.css'
-import logo from '../assets/logo.png'
+import logo from '../../assets/logo.png'
 
 const NAV_LINKS = [
   { label: 'Psicología',   href: '#psicologia' },
