@@ -1,11 +1,14 @@
 import Navbar from './components/Navbar'
-import Footer from './components/Footer'
 import './App.css'
+import Footer from './components/Footer'  
+import Hero from './components/Hero'
 
 function App() {
   return (
     <div className="app">
       <Navbar />
+
+      <Hero />
 
       <main>
         <section id="psicologia" className="specialty-section">
