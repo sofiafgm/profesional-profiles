@@ -24,7 +24,6 @@ export const SPECIALTIES: Specialty[] = [
   }
 ]
 
-
 export const PROFILES = [
   {
     id: 1,
@@ -38,7 +37,7 @@ export const PROFILES = [
     modality: "Virtual y presencial",
     schedule: "Sobre cita (L-V mañanas, sábados flexible)",
     message: "Soy psicóloga clínica y acompaño a mis consultantes a comprender lo que están viviendo desde un espacio seguro, sin juicios y con una mirada clara y práctica para construir una vida alineada con lo que realmente desean. Entenderte es el primer paso para transformarte, y no tienes que hacerlo solo(a).",
-    imageUrl: "/vianney.jpg" 
+    imageUrl: "/vianney.jpeg" 
   },
   {
     id: 2,
@@ -52,7 +51,7 @@ export const PROFILES = [
     modality: "Híbrida",
     schedule: "L-J y Sábados por las mañanas (Miércoles y Martes solo en línea).",
     message: "Reconozco el esfuerzo que implica hablar de experiencias y emociones difíciles. El objetivo no es generar cambios inmediatos, sino avanzar a tu ritmo fortaleciendo las herramientas para afrontar situaciones de manera saludable. El cambio depende de la constancia y disposición para seguir avanzando.",
-    imageUrl: "/paola.jpg"
+    imageUrl: "/paola.jpeg" 
   },
   {
     id: 3,
@@ -66,7 +65,7 @@ export const PROFILES = [
     modality: "Híbrida (Preferentemente presencial)",
     schedule: "9:00 am - 1:00 pm o 7:00 pm - 8:00 pm",
     message: "Sé que pedir ayuda puede ser una de las decisiones más difíciles. Por eso quiero ofrecerte un espacio donde puedas sentirte seguro, escuchado y comprendido, sin juicios. Te acompañaré a explorar tu historia y descubrir recursos que te permitan vivir con mayor tranquilidad.",
-    imageUrl: "/andrea.jpg"
+    imageUrl: "/andrea.jpeg" 
   },
   {
     id: 4,
@@ -80,6 +79,6 @@ export const PROFILES = [
     modality: "Presencial, en línea o híbrida",
     schedule: "10:00 am - 1:00 pm y 4:00 pm - 9:00 pm",
     message: "Te doy la bienvenida a un espacio de confianza y respeto. Mi propósito es acompañarte a desarrollar una mayor conciencia de ti mismo, comprender tus emociones y descubrir nuevas maneras de relacionarte contigo y con los demás desde la autenticidad y la responsabilidad.",
-    imageUrl: "/cinthia.jpg"
+    imageUrl: "/cinthia.jpeg" 
   }
 ];
