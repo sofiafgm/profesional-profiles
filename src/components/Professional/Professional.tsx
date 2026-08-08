@@ -1,6 +1,6 @@
 import React from 'react';
 import type { ProfessionalProps } from './Professional.types';
-import './professional.css'; 
+
 
 const Professional: React.FC<ProfessionalProps> = ({
   name,
