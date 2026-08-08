@@ -6,6 +6,7 @@ const NAV_LINKS = [
   { label: 'Psicología',   href: '#psicologia' },
   { label: 'Odontología',  href: '#odontologia' },
   { label: 'Fisioterapia', href: '#fisioterapia' },
+  { label: 'Conoce a los profesionales', href: '#profesionales' }, 
 ]
 
 export default function Navbar() {
