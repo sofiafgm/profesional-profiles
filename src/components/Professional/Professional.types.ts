@@ -1,4 +1,4 @@
-export interface ProfessionalProps {
+export interface Professional {
   id?: number;
   name: string;
   cedula: string;

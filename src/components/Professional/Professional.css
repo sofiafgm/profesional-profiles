@@ -1,3 +1,24 @@
+.professional-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.professional-section h2 {
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.professional-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
 .professional-card {
     background: #ffffff;
     border-radius: 12px;
