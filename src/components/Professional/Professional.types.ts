@@ -8,7 +8,6 @@ export interface ProfessionalProps {
   areas: string;
   experience: string;
   modality: string;
-  schedule: string;
   message: string;
   imageUrl: string;
 }

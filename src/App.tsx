@@ -35,7 +35,6 @@ function App() {
                 areas={profile.areas}
                 experience={profile.experience}
                 modality={profile.modality}
-                schedule={profile.schedule}
                 message={profile.message}
                 imageUrl={profile.imageUrl}
               />
