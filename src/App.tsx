@@ -12,9 +12,9 @@ function App() {
       <Hero />
       
       <main>
-
-        <Professional />
         
+        <Professional />
+
       </main>
 
       <Footer />

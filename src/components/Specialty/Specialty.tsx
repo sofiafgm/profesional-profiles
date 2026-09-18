@@ -20,6 +20,7 @@ export default function Specialty() {
         <h2>{specialty.name}</h2>
   
         <p>{specialty.description}</p>
+
       </div>
     </section>
     ))

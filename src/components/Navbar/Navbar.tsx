@@ -3,10 +3,10 @@ import './Navbar.css'
 import logo from '../../assets/logo.png'
 
 const NAV_LINKS = [
-  { label: 'Psicología',   href: '#psicologia' },
-  { label: 'Odontología',  href: '#odontologia' },
-  { label: 'Fisioterapia', href: '#fisioterapia' },
-  { label: 'Conoce a los profesionales', href: '#profesionales' }, 
+  //{ label: 'Psicología',   href: '#psicologia' },
+  //{ label: 'Odontología',  href: '#odontologia' },
+  //{ label: 'Fisioterapia', href: '#fisioterapia' },
+  { label: 'Conoce a nuestros profesionales', href: '#profesionales' }, 
 ]
 
 export default function Navbar() {
