@@ -10,6 +10,8 @@
   color: var(--color-primary-dark);
   margin: 0 0 16px;
   letter-spacing: -0.5px;
+  text-align: center;
+  padding: 2rem 0;
 }
 
 .professional-grid {

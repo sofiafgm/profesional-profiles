@@ -6,7 +6,7 @@ import type { Professional } from './Professional.types';
 export default function Professional() {
   return (
     <section id="profesionales" className="professional-section">
-      <h2 style={{ textAlign: 'center', padding: '2rem 0' }}>Conoce a nuestros profesionales</h2>
+      <h2>Conoce a nuestros profesionales</h2>
     <div className="professional-grid">
     {PROFILES.map((profile) => (
       <div key={profile.id} className="professional-card">
