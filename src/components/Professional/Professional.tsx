@@ -12,7 +12,6 @@ const Professional: React.FC<ProfessionalProps> = ({
   areas,
   experience,
   modality,
-  schedule,
   message,
   imageUrl
 }) => {
@@ -33,7 +32,6 @@ const Professional: React.FC<ProfessionalProps> = ({
         <p><strong>Áreas de atención:</strong> {areas}</p>
         <p><strong>Experiencia:</strong> {experience}</p>
         <p><strong>Modalidad:</strong> {modality}</p>
-        <p><strong>Horarios:</strong> {schedule}</p>
         
         <div className="professional-message">
           <p><em>"{message}"</em></p>
