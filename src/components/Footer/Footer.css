@@ -1,6 +1,6 @@
 .footer {
-  background-color: var(--color-primary-dark);
-  border-top: 3px solid var(--color-primary-light);
+  background-color: var(--surface-color);
+  border-top: 3px solid var(--primary-color);
 }
 
 .footer-inner {
@@ -32,14 +32,14 @@
   font-weight: 700;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  color: var(--color-primary-light);
+  color: var(--primary-color);
   margin: 0;
 }
 
 .footer-description {
   font-size: 14px;
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-secondary);
   line-height: 1.7;
   margin: 0;
 }
@@ -47,7 +47,7 @@
 /* ── Address ──────────────────────────────────────────── */
 .footer-address {
   font-style: normal;
-  color: rgba(255, 255, 255, 0.85);
+  color: var(--text-secondary);
   font-size: 15px;
   line-height: 1.7;
   margin: 0;
@@ -72,13 +72,49 @@
 .schedule-days {
   font-size: 14px;
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--text-primary);
 }
 
 .schedule-hours {
   font-size: 14px;
-  color: rgba(255, 255, 255, 0.70);
+  color: var(--text-muted);
   line-height: 1.5;
+}
+
+/* ── Scroll-to-top button ─────────────────────────────── */
+.scroll-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  cursor: pointer;
+  flex-shrink: 0;
+  align-self: center;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.scroll-top:hover {
+  background-color: var(--primary-hover);
+  color: var(--text-primary);
+  transform: translateY(-2px);
+}
+
+.scroll-top:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 3px;
+}
+
+.scroll-top-arrow {
+  font-size: 20px;
+  line-height: 1;
 }
 
 /* ── Mobile ───────────────────────────────────────────── */

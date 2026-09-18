@@ -1,34 +1,23 @@
 :root {
-  /* Brand palette */
-  --color-primary:       rgb(39, 131, 224);
-  --color-primary-dark:  rgb(22, 74, 185);
-  --color-primary-light: rgb(96, 185, 239);
-  --color-bg:            rgb(237, 248, 255);
-  --color-text:          rgb(34, 53, 77);
-  --color-text-muted:    rgb(90, 105, 125);
-  --color-success:       rgb(113, 210, 84);
-  --color-success-bg:    rgb(167, 230, 137);
-  --color-warning:       rgb(248, 201, 64);
-  --color-error:         rgb(243, 117, 116);
-  --color-promo:         rgb(241, 112, 183);
-  --color-accent2:       rgb(162, 110, 223);
-  --color-white:         rgb(255, 255, 255);
-  --color-border:        rgb(205, 214, 225);
-  --color-disabled-text: rgb(90, 105, 125);
-  --color-disabled-bg:   rgb(245, 247, 250);
+  --primary-color: rgb(255, 152, 0);
+  --primary-hover: rgb(255, 98, 16);
+  --secondary-color: rgb(43, 92, 130);
+  --background-color: rgb(5, 14, 14);
+  --navbar-background: rgb(34, 34, 34);
+  --surface-color: rgb(34, 39, 39);
+  --surface-light: rgb(255, 255, 255);
+  --text-primary: rgb(255, 255, 255);
+  --text-secondary: rgb(205, 205, 205);
+  --text-muted: rgb(160, 160, 160);
+  --success-color: rgb(113, 210, 84);
+  --success-background: rgb(35, 75, 45);
+  --warning-color: rgb(248, 201, 64);
+  --error-color: rgb(243, 117, 116);
+  --accent-color: rgb(98, 134, 162);
+  --border-color: rgb(75, 80, 80);
 
-  /* Legacy aliases kept for existing component usage */
-  --text:       var(--color-text-muted);
-  --text-h:     var(--color-text);
-  --bg:         var(--color-bg);
-  --border:     var(--color-border);
-  --code-bg:    rgb(230, 242, 252);
-  --accent:     var(--color-primary);
-  --accent-bg:  rgba(39, 131, 224, 0.1);
-  --accent-border: rgba(39, 131, 224, 0.5);
-  --social-bg:  rgba(237, 248, 255, 0.6);
   --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+    rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
 
   --sans:    system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
@@ -36,8 +25,8 @@
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color: var(--color-text);
-  background: var(--color-bg);
+  color: var(--text-primary);
+  background: var(--background-color);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -59,13 +48,15 @@
 
 body {
   margin: 0;
+  background: var(--background-color);
+  color: var(--text-primary);
 }
 
 h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
-  color: var(--text-h);
+  color: var(--text-primary);
 }
 
 h1 {
@@ -77,6 +68,7 @@ h1 {
     margin: 20px 0;
   }
 }
+
 h2 {
   font-size: 24px;
   line-height: 118%;
@@ -86,21 +78,18 @@ h2 {
     font-size: 20px;
   }
 }
+
 p {
   margin: 0;
 }
 
-code,
-.counter {
+code {
   font-family: var(--mono);
   display: inline-flex;
   border-radius: 4px;
-  color: var(--text-h);
-}
-
-code {
+  color: var(--text-primary);
   font-size: 15px;
   line-height: 135%;
   padding: 4px 8px;
-  background: var(--code-bg);
+  background: var(--surface-color);
 }
