@@ -1,3 +1,4 @@
+import './Professional.css';
 import React from 'react';
 import type { ProfessionalProps } from './Professional.types';
 
